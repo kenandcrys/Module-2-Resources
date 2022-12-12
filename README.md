@@ -227,3 +227,4 @@ To determine if you have setup your repo to correctly receive solutions use the 
 <!-- git flow guide links -->
 [git flow]: ./git-flow-guide/README.md
 [connecting]: ./git-flow-guide/README.md#connecting-a-local-cloned-repo-to-a-github-repo
+# Module-2-Resources
