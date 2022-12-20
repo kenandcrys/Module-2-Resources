@@ -6,12 +6,14 @@ class Word {
   removeVowels() {
     let vowels = "aeiouAEIOU";
     let newWord = "";
+    console.log(this.word)
     for (let i = 0; i < this.word.length; i++) {
       let char = this.word[i];
       if (!vowels.includes(char)) {
         newWord += char;
       }
     }
+    
     return newWord;
   }
 

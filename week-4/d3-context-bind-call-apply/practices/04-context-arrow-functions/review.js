@@ -1,5 +1,5 @@
 // Convert restSum into a multi-line fat-arrow function
-const restSum = function(...otherNums) {
+const restSum = (...otherNums) => {
   let sum = otherNums.reduce((acc, el) => (acc += el));
   return sum;
 };
