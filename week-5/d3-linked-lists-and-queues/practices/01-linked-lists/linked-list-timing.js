@@ -7,3 +7,19 @@ Construct a timing test to verify the time complexities of `addToHead` and
 */
 
 // Your code here
+const linkedList = new LinkedList();
+
+
+
+let number = 100000;
+
+const adder = num => {
+    
+    for (let i = 0; i < num; i++){
+      linkedList.addToTail(i)
+    }
+    console.log(linkedList.print())
+}
+console.time(`adder`)
+adder(number)
+console.timeEnd(`adder`)
