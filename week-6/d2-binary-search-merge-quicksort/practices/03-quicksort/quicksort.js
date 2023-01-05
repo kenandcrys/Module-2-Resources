@@ -1,19 +1,14 @@
-function quicksort(arr) {
-
-  // Check if the input is length 1 or less
-    // If so, it's already sorted: return
-
-  // Pick the first value as the pivot
-
-  // Orient the pivot so that...
-      // every number smaller than the pivot is to the left
-      // every number larger (or equal) than the pivot is to the right
-
-  // Recursively sort the left
-  // Recursively sort the right
-
-  // Return the left, pivot and right in sorted order
-
+function quicksort(Arr) {
+  if (Arr.length <= 1) {
+    return Arr;
+  }
+  const pivot = Arr[Arr.length - 1];
+  const leftArr = [];
+  const rightArr = [];
+  for (let i = 0; i < Arr.length - 1; i++) {
+    Arr[i] < pivot ? leftArr.push(Arr[i]) : rightArr.push(Arr[i])
+  }
+  return [...quicksort(leftArr), pivot, ...quicksort(rightArr)];
 }
 
 
